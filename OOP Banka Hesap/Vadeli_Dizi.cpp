@@ -7,25 +7,19 @@ Vadeli_Dizi::Vadeli_Dizi()
 
 void Vadeli_Dizi::degerAl(int sayi)
 {
-	if (dizi != NULL)
-	{
-		gosterr = sayi;
-		dizi = new Hesap*[sayi];
+	gosterr = sayi;
+	dizi = new Hesap*[sayi];
 
-		for (int i = 0; i < gosterr; i++)
-		{
-			dizi[i] = new Vadeli();
-		}
-		for (int i = 0; i < gosterr; i++)
-		{
-			cout << "Elemanlarý Girin(ID, Bakiye, Oran, Ad Soyad): \n";
-			cin >> (Vadeli *)(dizi[i]);
-		}
-	}
-	else
+	for (int i = 0; i < gosterr; i++)
 	{
-		cout << "Herhangi bir veri bulanamadý!\n";
+		dizi[i] = new Vadeli();
 	}
+	for (int i = 0; i < gosterr; i++)
+	{
+		cout << "Elemanlarý Girin(ID, Bakiye, Oran, Ad Soyad): \n";
+		cin >> (Vadeli *)(dizi[i]);
+	}
+}
 }
 
 void Vadeli_Dizi::sil(int a, int silID)
