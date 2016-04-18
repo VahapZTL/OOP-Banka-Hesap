@@ -20,7 +20,6 @@ void Vadeli_Dizi::degerAl(int sayi)
 		cin >> (Vadeli *)(dizi[i]);
 	}
 }
-}
 
 void Vadeli_Dizi::sil(int a, int silID)
 {
